@@ -48,7 +48,6 @@ $count_bank_pending = $stmt_bank->fetchColumn();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard - ANAB Finance</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         :root {
             --orange: #F77F00;      
@@ -62,12 +61,15 @@ $count_bank_pending = $stmt_bank->fetchColumn();
         .dashboard-container { display: flex; min-height: 100vh; }
 
         .sidebar {
-            width: 250px;
-            background-color: var(--dark);
-            color: var(--white);
-            padding: 20px;
-            box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+            display: block; 
+            padding: 12px 15px; 
+            color: var(--white); 
+            text-decoration: none; 
+            margin-bottom: 8px; 
+            border-radius: 5px; 
+            transition: 0.3s;
         }
+    
         .sidebar a { display: block; padding: 12px 10px; color: var(--white); text-decoration: none; margin-bottom: 5px; border-radius: 5px; }
         .sidebar a:hover, .sidebar a.active { background-color: var(--orange); }
         .logo h2 { text-align: center; margin-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; }
@@ -97,6 +99,14 @@ $count_bank_pending = $stmt_bank->fetchColumn();
         .kpi-card.paid { border-left-color: var(--green); }
         .kpi-card.pending { border-left-color: var(--orange); }
         .kpi-card.alert { border-left-color: var(--red); }
+
+
+        @media (max-width: 992px) {
+            .dashboard-container { flex-direction: column; }
+            .sidebar { width: 100%; box-sizing: border-box; }
+            .sidebar nav { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+            .sidebar a { margin-bottom: 0; }
+        }
     </style>
 </head>
 <body>
