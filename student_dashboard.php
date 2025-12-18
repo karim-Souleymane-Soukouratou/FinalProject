@@ -192,7 +192,6 @@ header h1 { font-size: 2.5rem; color: var(--dark); margin-bottom: 10px; }
         <nav class="sidebar-nav">
             <a href="student_dashboard.php" class="active"><i class="fas fa-home"></i> Dashboard</a>
             <a href="payment_history.php"><i class="fas fa-history"></i> Payment History</a>
-            <a href="payment_calendar.php"><i class="fas fa-calendar-alt"></i> Payment Calendar</a>
             <a href="edit_bank.php"><i class="fas fa-user-edit"></i> Update Bank Details</a>
             <a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
         </nav>
