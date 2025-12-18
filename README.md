@@ -1,28 +1,36 @@
-﻿# E-Bourse ANAB Niger
+﻿#  E-Bourse ANAB Niger 
+## 1. Live Website Access
+The system is fully deployed and ready for review at:  
+ [http://169.239.251.102:341/~soukouratou.souleymane/FinalProject/](http://169.239.251.102:341/~soukouratou.souleymane/FinalProject/)
 
-## 1. Website Link
-The website is publicly accessible at:  
-[http://169.239.251.102:341/~soukouratou.souleymane/FinalProject/](http://169.239.251.102:341/~soukouratou.souleymane/FinalProject/)
+---
 
-## 2. Access for Testing Special Features
-Some features require login. Use the following credentials to test: 
+## 2. Testing Credentials
 
-# For the Admnin
-- **Username:** karim  
-- **Password:** @karim12345
+### Administrator Access (Full Control)
+- **Username:** `karim`  
+- **Password:** `@karim12345`  
+*Features: Financial Dashboard, Add Student/Admin, Bank Verification, Payment File Generation.*
 
-# Student (to activate the account and login)
-- **StudentID:** STU009  (You will create you own password, email, phone Number(+227 and 8 digit: example: +22790000009) )
-> 
+### 🎓 Student Account Activation (User Flow)
+To test the student registration and activation flow:
+- **Scholar ID:** `STU009`
+- **Instructions:** Navigate to the **"Activate Account"** page. Enter the Scholar ID above, then set your own email, password, and phone number (Format: +227 followed by 8 digits, e.g., `+22790000009`).
 
-## 3. Testing Instructions
-1. Open the website link in a browser.  
-2. (for admin)Navigate to the login page and enter the credentials above.
-    (for student): Navigate to the new activate account page and enter the credentials above then press enter to active it
-3. Test the following key features:
-   - Dashboard updates (Paid / Pending status)  
-   - Reports generation (CSV file foe admin payement)
-## 4. Notes
-- No installation is required; it is fully deployed online.  
-- If any issues occur, contact the developer: `your-email@example.com`.
+---
 
+## 3. Key Features to Test
+### For Administrators:
+* **Dynamic Dashboard:** Real-time updates of Paid vs. Pending scholarship funds.
+* **Payment Run:** Generate the official bank CSV file and schedule disbursements.
+* **User Management:** Add new students or administrative staff directly from the UI.
+* **Bank Verification:** Approve or reject student-submitted bank details.
+
+### For Students:
+* **Profile Management:** Update bank information (Bank Name, Account Number, IBAN).
+* **Payment History:** View personal disbursement status and history.
+
+---
+## 4. Technical Notes
+* **No Installation Required:** The project is hosted on a remote server.
+* **Security:** Password hashing (BCRYPT) and role-based access control (RBAC) are implemented to protect financial data.
