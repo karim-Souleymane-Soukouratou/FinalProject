@@ -108,10 +108,10 @@ $count_bank_pending = $stmt_bank->fetchColumn();
         </div>
         <nav>
             <a href="admin_dashboard.php" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
-            <a href="payment_run.php"><i class="fas fa-money-check-alt"></i> **Payment Run**</a>
+            <a href="payment_run.php"><i class="fas fa-money-check-alt"></i> Payment Run</a>
             <a href="bank_verification.php"><i class="fas fa-university"></i> Bank Verification</a>
+            <a href="add_student.php"><i class="fas fa-user-plus"></i> Add New Student</a>
             <a href="student_management.php"><i class="fas fa-users"></i> Student Management</a>
-            <a href="reports.php"><i class="fas fa-chart-line"></i> Reports</a>
             <a href="logout.php" style="color: var(--red); margin-top: 40px;"><i class="fas fa-sign-out-alt"></i> Logout</a>
         </nav>
     </aside>
